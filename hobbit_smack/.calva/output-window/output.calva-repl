@@ -1,10 +1,16 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
 ; Jacking in...
 ; Connecting using "Leiningen" project type.
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Starting Jack-in Terminal: pushd /home/mborawski/Dokumenty/my_projects/clojure_pg/clojure_bandt/hobbit_smack ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Using host:port 127.0.0.1:34571 ...
+; Starting Jack-in Terminal: pushd e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:41670 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -20,27 +26,48 @@ clj꞉hobbit-smack.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉hobbit-smack.core꞉> 
 ; Jack-in done.
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/foo
-clj꞉hobbit-smack.core꞉> 
-; Execution error (ArityException) at hobbit-smack.core/eval7653 (form-init6094654980971534819.clj:8).
-; Wrong number of args (0) passed to: hobbit-smack.core/foo
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/foo
-clj꞉hobbit-smack.core꞉> 
-; Execution error (ArityException) at hobbit-smack.core/eval7901 (form-init6094654980971534819.clj:8).
-; Wrong number of args (0) passed to: hobbit-smack.core/foo
-clj꞉hobbit-smack.core꞉> 
-test Hello, World!
 nil
 clj꞉hobbit-smack.core꞉> 
-test Hello, World!
+"left-"
+clj꞉hobbit-smack.core꞉> 
 nil
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/asym-hobbit-body-parts
+nil
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/matching-part
+10
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/symmetrize-body-parts
+15
+clj꞉hobbit-smack.core꞉> 
+15
+clj꞉hobbit-smack.core꞉> 
+20
+clj꞉hobbit-smack.core꞉> 
+25
+clj꞉hobbit-smack.core꞉> 
+25
+clj꞉hobbit-smack.core꞉> 
+5
+clj꞉hobbit-smack.core꞉> 
+14
+clj꞉hobbit-smack.core꞉> 
+12
+clj꞉hobbit-smack.core꞉> 
+5
+clj꞉hobbit-smack.core꞉> 
+4
+clj꞉hobbit-smack.core꞉> 
+-4
+clj꞉hobbit-smack.core꞉> 
+; Syntax error compiling if at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:104:5).
+; Too many arguments to if
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/my-reduce
+clj꞉hobbit-smack.core꞉> 
+10
+clj꞉hobbit-smack.core꞉> 
+25
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/better-symmetrize-body-parts
 clj꞉hobbit-smack.core꞉> 
 [{:name "head", :size 3}
  {:name "left-eye", :size 1}
@@ -73,4 +100,187 @@ clj꞉hobbit-smack.core꞉> 
  {:name "left-achilles", :size 1}
  {:name "right-foot", :size 2}
  {:name "left-foot", :size 2}]
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/matching-part
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/hit
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/hit
+clj꞉hobbit-smack.core꞉> 
+{:name "right-thigh", :size 4}
+clj꞉hobbit-smack.core꞉> 
+{:name "chest", :size 10}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-achilles", :size 1}
+clj꞉hobbit-smack.core꞉> 
+{:name "left-ear", :size 1}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-shoulder", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-lower-leg", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-hand", :size 2}
+clj꞉hobbit-smack.core꞉> 
+{:name "left-kidney", :size 1}
+clj꞉hobbit-smack.core꞉> 
+{:name "left-upper-arm", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "chest", :size 10}
+clj꞉hobbit-smack.core꞉> 
+{:name "back", :size 10}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-lower-leg", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "left-forearm", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-achilles", :size 1}
+clj꞉hobbit-smack.core꞉> 
+{:name "left-forearm", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "back", :size 10}
+clj꞉hobbit-smack.core꞉> 
+{:name "abdomen", :size 6}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-lower-leg", :size 3}
+clj꞉hobbit-smack.core꞉> 
+{:name "right-shoulder", :size 3}
+clj꞉hobbit-smack.core꞉> 
+(1 2 3)
+clj꞉hobbit-smack.core꞉> 
+(1 2 3)
+clj꞉hobbit-smack.core꞉> 
+clojure.lang.PersistentVector$ChunkedSeq
+clj꞉hobbit-smack.core꞉> 
+java.lang.Long
+clj꞉hobbit-smack.core꞉> 
+clojure.lang.PersistentVector$ChunkedSeq
+clj꞉hobbit-smack.core꞉> 
+java.lang.Double
+clj꞉hobbit-smack.core꞉> 
+clojure.lang.PersistentVector$ChunkedSeq
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/unify-diet-data
+clj꞉hobbit-smack.core꞉> 
+{:human 8, :critter 3}
+clj꞉hobbit-smack.core꞉> 
+; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:148:1).
+; Unable to resolve symbol: human-cons in this context
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/human-cons
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/critter-cons
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/unify-diet-data
+clj꞉hobbit-smack.core꞉> 
+{:human 8, :critter 3}
+clj꞉hobbit-smack.core꞉> 
+{:human 8, :critter 3}
+clj꞉hobbit-smack.core꞉> 
+({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+clj꞉hobbit-smack.core꞉> 
+{:human 1, :critter 0.2}
+clj꞉hobbit-smack.core꞉> 
+({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+clj꞉hobbit-smack.core꞉> 
+clojure.lang.PersistentVector$ChunkedSeq
+clj꞉hobbit-smack.core꞉> 
+({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/sum
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/avg
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/stats
+clj꞉hobbit-smack.core꞉> 
+(17 3 17/3)
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/stats
+clj꞉hobbit-smack.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:297).
+; Key must be integer
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/stats
+clj꞉hobbit-smack.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:297).
+; Key must be integer
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/stats
+clj꞉hobbit-smack.core꞉> 
+(17 3 17/3)
+clj꞉hobbit-smack.core꞉> 
+{:aliast "Batman", :real "Bruce Wayne"}
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/identities
+clj꞉hobbit-smack.core꞉> 
+("Bruce Wayne" "peter parker" "your mom" "your dad")
+clj꞉hobbit-smack.core꞉> 
+; Execution error (ArityException) at hobbit-smack.core/eval8154 (form-init5971269324400651389.clj:167).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 31}
+clj꞉hobbit-smack.core꞉> 
+{:max 31, :min 11}
+clj꞉hobbit-smack.core꞉> 
+; Execution error (ArityException) at hobbit-smack.core/eval8242 (form-init5971269324400651389.clj:172).
+; Wrong number of args (1) passed to: clojure.core/assoc--5481
+clj꞉hobbit-smack.core꞉> 
+; Execution error (ArityException) at hobbit-smack.core/eval8244 (form-init5971269324400651389.clj:172).
+; Wrong number of args (1) passed to: clojure.core/assoc--5481
+clj꞉hobbit-smack.core꞉> 
+; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:172:1).
+; Unable to resolve symbol: new-map in this context
+clj꞉hobbit-smack.core꞉> 
+{:my "not", :your "nice"}
+clj꞉hobbit-smack.core꞉> 
+{:my "not", :your "nice", :key3 "ew"}
+clj꞉hobbit-smack.core꞉> 
+{:ewww 130, :max 31, :min 11}
+clj꞉hobbit-smack.core꞉> 
+{:human 4.1}
+clj꞉hobbit-smack.core꞉> 
+{:wupwup 30, :human 4.1}
+clj꞉hobbit-smack.core꞉> 
+{:wupwup 30, :mupwup 3, :human 4.1}
+clj꞉hobbit-smack.core꞉> 
+{:human 4.1, :wupwup 30}
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/filter-if-less
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/filter-if-less
+clj꞉hobbit-smack.core꞉> 
+{:human 4.1, :wupwup 30}
+clj꞉hobbit-smack.core꞉> 
+{:human 4.1, :critter 3.9, :wupwup 30, :mupwup 3}
+clj꞉hobbit-smack.core꞉> 
+{}
+clj꞉hobbit-smack.core꞉> 
+{:wupwup 30}
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/more-than
+clj꞉hobbit-smack.core꞉> 
+{:wupwup 30}
+clj꞉hobbit-smack.core꞉> 
+{}
+clj꞉hobbit-smack.core꞉> 
+{:human 4.1, :wupwup 30}
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/more-than
+clj꞉hobbit-smack.core꞉> 
+#'hobbit-smack.core/more-than
 clj꞉hobbit-smack.core꞉> 
