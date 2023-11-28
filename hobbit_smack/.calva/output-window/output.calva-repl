@@ -10,7 +10,7 @@
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.0.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.28.5"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
-; Using host:port 127.0.0.1:41670 ...
+; Using host:port 127.0.0.1:3914 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -26,261 +26,192 @@ clj꞉hobbit-smack.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉hobbit-smack.core꞉> 
 ; Jack-in done.
 clj꞉hobbit-smack.core꞉> 
-nil
+"HeyHo"
 clj꞉hobbit-smack.core꞉> 
-"left-"
+"Hey Ho"
 clj꞉hobbit-smack.core꞉> 
-nil
+; Execution error (ClassCastException) at hobbit-smack.core/eval7769 (form-init9025285547077276482.clj:195).
+; java.lang.Long cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-nil
+; Execution error (ArityException) at hobbit-smack.core/eval8016 (form-init9025285547077276482.clj:195).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
 clj꞉hobbit-smack.core꞉> 
-10
+[[1 2 3 4]]
 clj꞉hobbit-smack.core꞉> 
-15
+[[1 2 3 4] [1]]
 clj꞉hobbit-smack.core꞉> 
-15
+[1 2 3 4 5]
 clj꞉hobbit-smack.core꞉> 
-20
+(1 2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-25
+; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:198:1).
+; Unable to resolve symbol: mylist in this context
 clj꞉hobbit-smack.core꞉> 
-25
+#'hobbit-smack.core/mylist
 clj꞉hobbit-smack.core꞉> 
-5
+; Execution error (ClassCastException) at hobbit-smack.core/eval8027 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-14
+#'hobbit-smack.core/mylist
 clj꞉hobbit-smack.core꞉> 
-12
+#'hobbit-smack.core/mylist
 clj꞉hobbit-smack.core꞉> 
-5
+; Execution error (ClassCastException) at hobbit-smack.core/eval8029 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-4
+; Execution error (ClassCastException) at hobbit-smack.core/eval8031 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
--4
+#'hobbit-smack.core/mylist
 clj꞉hobbit-smack.core꞉> 
-; Syntax error compiling if at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:104:5).
-; Too many arguments to if
+; Execution error (ClassCastException) at hobbit-smack.core/eval8033 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/my-reduce
+; Execution error (ClassCastException) at hobbit-smack.core/eval8035 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-10
+; Execution error (ClassCastException) at hobbit-smack.core/eval8037 (form-init9025285547077276482.clj:198).
+; clojure.lang.PersistentList cannot be cast to clojure.lang.IFn
 clj꞉hobbit-smack.core꞉> 
-25
+(1 2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/better-symmetrize-body-parts
+#'hobbit-smack.core/mylist
 clj꞉hobbit-smack.core꞉> 
-[{:name "head", :size 3}
- {:name "left-eye", :size 1}
- {:name "right-eye", :size 1}
- {:name "left-ear", :size 1}
- {:name "right-ear", :size 1}
- {:name "mouth", :size 1}
- {:name "nose", :size 1}
- {:name "neck", :size 2}
- {:name "left-shoulder", :size 3}
- {:name "right-shoulder", :size 3}
- {:name "right-upper-arm", :size 3}
- {:name "left-upper-arm", :size 3}
- {:name "chest", :size 10}
- {:name "back", :size 10}
- {:name "left-forearm", :size 3}
- {:name "right-forearm", :size 3}
- {:name "abdomen", :size 6}
- {:name "left-kidney", :size 1}
- {:name "right-kidney", :size 1}
- {:name "left-hand", :size 2}
- {:name "right-hand", :size 2}
- {:name "right-knee", :size 2}
- {:name "left-knee", :size 2}
- {:name "right-thigh", :size 4}
- {:name "left-thigh", :size 4}
- {:name "right-lower-leg", :size 3}
- {:name "left-lower-leg", :size 3}
- {:name "right-achilles", :size 1}
- {:name "left-achilles", :size 1}
- {:name "right-foot", :size 2}
- {:name "left-foot", :size 2}]
+(1 2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/matching-part
+(1 2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/hit
+; Execution error (IllegalArgumentException) at hobbit-smack.core/eval8045 (form-init9025285547077276482.clj:200).
+; No value supplied for key: ["bad" "juju"]
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/hit
+{"bad" "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-thigh", :size 4}
+{:lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "chest", :size 10}
+#{"juju" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-achilles", :size 1}
+#{"juju" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "left-ear", :size 1}
+{:lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-shoulder", :size 3}
+{:lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-lower-leg", :size 3}
+{:lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-hand", :size 2}
+#{"juju" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "left-kidney", :size 1}
+{:lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "left-upper-arm", :size 3}
+{:bad2 "juju", :lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "chest", :size 10}
+#{"juju" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "back", :size 10}
+#{"juju" "juju2" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-lower-leg", :size 3}
+{:bad2 "juju", :lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "left-forearm", :size 3}
+#{"juju" "juju2" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "right-achilles", :size 1}
+{:bad2 "juju", :lack "stuff", :bad "juju"}
 clj꞉hobbit-smack.core꞉> 
-{:name "left-forearm", :size 3}
+#{"juju" "juju2" :bad}
 clj꞉hobbit-smack.core꞉> 
-{:name "back", :size 10}
+#'hobbit-smack.core/add100
 clj꞉hobbit-smack.core꞉> 
-{:name "abdomen", :size 6}
+400
 clj꞉hobbit-smack.core꞉> 
-{:name "right-lower-leg", :size 3}
+#'hobbit-smack.core/add100n
 clj꞉hobbit-smack.core꞉> 
-{:name "right-shoulder", :size 3}
+110
 clj꞉hobbit-smack.core꞉> 
-(1 2 3)
+; Execution error (ClassCastException) at hobbit-smack.core/add100n (form-init9025285547077276482.clj:209).
+; java.lang.String cannot be cast to java.lang.Number
 clj꞉hobbit-smack.core꞉> 
-(1 2 3)
+110
 clj꞉hobbit-smack.core꞉> 
-clojure.lang.PersistentVector$ChunkedSeq
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-java.lang.Long
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-clojure.lang.PersistentVector$ChunkedSeq
+-1
 clj꞉hobbit-smack.core꞉> 
-java.lang.Double
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-clojure.lang.PersistentVector$ChunkedSeq
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/unify-diet-data
+#function[clojure.core/partial/fn--5910]
 clj꞉hobbit-smack.core꞉> 
-{:human 8, :critter 3}
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:148:1).
-; Unable to resolve symbol: human-cons in this context
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/human-cons
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/critter-cons
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/unify-diet-data
+1
 clj꞉hobbit-smack.core꞉> 
-{:human 8, :critter 3}
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-{:human 8, :critter 3}
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-{:human 1, :critter 0.2}
+; Execution error (ArityException) at hobbit-smack.core/eval8118 (form-init9025285547077276482.clj:223).
+; Wrong number of args (1) passed to: hobbit-smack.core/dec-maker/fn--8115
 clj꞉hobbit-smack.core꞉> 
-({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-clojure.lang.PersistentVector$ChunkedSeq
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-({:human 8, :critter 0} {:human 1, :critter 0.2} {:human 5, :critter 0.33} {:human 4, :critter 1.11})
+1
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/sum
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/avg
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/stats
+#'hobbit-smack.core/dec-maker
 clj꞉hobbit-smack.core꞉> 
-(17 3 17/3)
+#'hobbit-smack.core/dec9
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/stats
+-19
 clj꞉hobbit-smack.core꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:297).
-; Key must be integer
+; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:225:3).
+; Unable to resolve symbol: % in this context
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/stats
+-19
 clj꞉hobbit-smack.core꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:297).
-; Key must be integer
+(nil nil nil)
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/stats
+("hey" " " "ho")
 clj꞉hobbit-smack.core꞉> 
-(17 3 17/3)
+("hey" " " "ho" " " "hey")
 clj꞉hobbit-smack.core꞉> 
-{:aliast "Batman", :real "Bruce Wayne"}
+#'hobbit-smack.core/mapset
 clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/identities
+#{4 3 2 5}
 clj꞉hobbit-smack.core꞉> 
-("Bruce Wayne" "peter parker" "your mom" "your dad")
+(2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-; Execution error (ArityException) at hobbit-smack.core/eval8154 (form-init5971269324400651389.clj:167).
-; Wrong number of args (1) passed to: clojure.core/reduce
+#{4 3 2 5}
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+(2 3 4 5)
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+(2 2 4 5)
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+#{4 2 5}
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+#{3 2}
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+#{3 2}
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+(2 2 3 3)
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+#'hobbit-smack.core/mapset
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+(2 3)
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 31}
+#'hobbit-smack.core/mapset
 clj꞉hobbit-smack.core꞉> 
-{:max 31, :min 11}
-clj꞉hobbit-smack.core꞉> 
-; Execution error (ArityException) at hobbit-smack.core/eval8242 (form-init5971269324400651389.clj:172).
-; Wrong number of args (1) passed to: clojure.core/assoc--5481
-clj꞉hobbit-smack.core꞉> 
-; Execution error (ArityException) at hobbit-smack.core/eval8244 (form-init5971269324400651389.clj:172).
-; Wrong number of args (1) passed to: clojure.core/assoc--5481
-clj꞉hobbit-smack.core꞉> 
-; Syntax error compiling at (e:\Dokumenty\my_github\clojure_pg\clojure_bandt\hobbit_smack\src\hobbit_smack\core.clj:172:1).
-; Unable to resolve symbol: new-map in this context
-clj꞉hobbit-smack.core꞉> 
-{:my "not", :your "nice"}
-clj꞉hobbit-smack.core꞉> 
-{:my "not", :your "nice", :key3 "ew"}
-clj꞉hobbit-smack.core꞉> 
-{:ewww 130, :max 31, :min 11}
-clj꞉hobbit-smack.core꞉> 
-{:human 4.1}
-clj꞉hobbit-smack.core꞉> 
-{:wupwup 30, :human 4.1}
-clj꞉hobbit-smack.core꞉> 
-{:wupwup 30, :mupwup 3, :human 4.1}
-clj꞉hobbit-smack.core꞉> 
-{:human 4.1, :wupwup 30}
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/filter-if-less
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/filter-if-less
-clj꞉hobbit-smack.core꞉> 
-{:human 4.1, :wupwup 30}
-clj꞉hobbit-smack.core꞉> 
-{:human 4.1, :critter 3.9, :wupwup 30, :mupwup 3}
-clj꞉hobbit-smack.core꞉> 
-{}
-clj꞉hobbit-smack.core꞉> 
-{:wupwup 30}
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/more-than
-clj꞉hobbit-smack.core꞉> 
-{:wupwup 30}
-clj꞉hobbit-smack.core꞉> 
-{}
-clj꞉hobbit-smack.core꞉> 
-{:human 4.1, :wupwup 30}
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/more-than
-clj꞉hobbit-smack.core꞉> 
-#'hobbit-smack.core/more-than
+#{3 2}
 clj꞉hobbit-smack.core꞉> 
