@@ -34,6 +34,7 @@ great-baby-name
 (def c-str (comp :strength :attributes))
 (def c-dex (comp :dexterity :attributes))
 
+
 (c-int character)
 (c-str character)
 (c-dex character)
@@ -50,3 +51,39 @@ great-baby-name
 (def spell-slots-comp (comp int inc (fn [x] (/ x 2)) c-int))
 
 (spell-slots-comp character)
+
+;; memoize
+(defn sleepy-identity
+  "returns the given value after 1 second"
+  [x]
+  (Thread/sleep 1000)
+  x)
+(sleepy-identity "Mr. Fantasticf")
+
+(def memo-sleepy-identity (memoize sleepy-identity))
+;; first call takes a sec, later calls are called from cache
+(memo-sleepy-identity "Mr. Fantasticf")
+
+;; Excercises ch5
+
+;; 1) You used (comp :intelligence :attributes) to create a function that returns a character’s intelligence. Create a new function, attr, that you can call like (attr :intelligence) and that does the same thing.
+
+character
+
+(defn attr2 [x character] ((comp x :attributes) character))
+
+(attr2 :intelligence character)
+
+(defn attr
+  [k]
+  (fn [obj] ((comp k :attributes) obj)))
+
+(defn attr2
+  [k obj]
+  ((comp k :attributes) obj))
+
+((attr :intelligence) character)
+
+(attr2 :intelligence character)
+
+(attr2 :strength character)
